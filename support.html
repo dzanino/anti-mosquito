@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anti-Mosquito — Support / Podpora</title>
+<style>
+  :root{--bg:#0a140f;--card:#0e1d16;--stroke:#1b2c23;--accent:#a8e6cf;--accent2:#5cdc94;
+        --text:#cfe5dc;--dim:#6f8a7e;--faint:#4a6258;}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+       background:linear-gradient(180deg,#0d1c15,#060d09);color:var(--text);line-height:1.65;}
+  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 64px;}
+  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
+  .logo{font-size:30px}
+  h1{font-size:22px;margin:0;color:var(--accent)}
+  nav{margin-left:auto;display:flex;gap:14px;align-items:center;font-size:14px}
+  nav a{color:var(--dim);text-decoration:none}
+  nav a:hover{color:var(--accent)}
+  .lang{display:inline-flex;border:1px solid var(--stroke);border-radius:999px;overflow:hidden}
+  .lang button{background:transparent;border:0;color:var(--dim);padding:5px 12px;cursor:pointer;font-size:13px}
+  .lang button.active{background:var(--accent2);color:#06140d;font-weight:700}
+  h2{color:var(--accent);font-size:17px;margin:26px 0 8px}
+  h3{color:var(--accent2);font-size:14px;margin:16px 0 4px}
+  .card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:18px 20px;margin-top:14px}
+  a{color:var(--accent2)}
+  ul{padding-left:20px} li{margin:6px 0}
+  .muted{color:var(--dim);font-size:13px}
+  .warn{border-color:#5a2a2a;background:#1d1010}
+  footer{margin-top:34px;border-top:1px solid var(--stroke);padding-top:16px;color:var(--dim);font-size:13px}
+  div[data-lang]{display:none}
+  body.sk div[data-lang="sk"]{display:block}
+  body.en div[data-lang="en"]{display:block}
+  span[data-lang]{display:none}
+  body.sk span[data-lang="sk"]{display:inline}
+  body.en span[data-lang="en"]{display:inline}
+</style>
+</head>
+<body class="sk">
+<div class="wrap">
+  <header>
+    <span class="logo">🦟</span>
+    <h1>Anti-Mosquito</h1>
+    <nav>
+      <a href="index.html"><span data-lang="sk">Domov</span><span data-lang="en">Home</span></a>
+      <a href="privacy.html">Privacy</a>
+      <span class="lang">
+        <button id="b-sk" onclick="setLang('sk')">SK</button>
+        <button id="b-en" onclick="setLang('en')">EN</button>
+      </span>
+    </nav>
+  </header>
+
+  <!-- SLOVENSKY -->
+  <div data-lang="sk">
+    <h2>Podpora</h2>
+    <div class="card">
+      <h3>Čo aplikácia robí</h3>
+      <p>Anti-Mosquito premení iPhone — a voliteľne Apple Watch — na experimentálny odpudzovač komárov pomocou vysokofrekvenčného zvuku a haptických impulzov.</p>
+
+      <h3>Ako ju používať</h3>
+      <ul>
+        <li><strong>Režim účinku:</strong> vyber „Len iPhone", „Len hodinky" alebo „Duálny".</li>
+        <li><strong>Duálny režim</strong> spustí iPhone aj hodinky synchrónne — najsilnejší vnem.</li>
+        <li><strong>Boost</strong> pridá frekvenčný sweep a zosilnenú haptiku.</li>
+        <li><strong>Optimalizovať</strong> automaticky nastaví najlepší režim podľa dostupných zariadení.</li>
+        <li><strong>Interval, dĺžka, frekvencia a typ vibrovania</strong> sa dajú ručne doladiť.</li>
+        <li><strong>Jazyk</strong> (SK/EN/systém) prepneš cez tlačidlo ⓘ vpravo hore.</li>
+      </ul>
+
+      <h3>Riešenie problémov</h3>
+      <ul>
+        <li><strong>Zvuk nepočuť:</strong> vyššie frekvencie (napr. 22 kHz) sú na hranici alebo mimo počuteľnosti dospelého človeka — to je zámer. Skús predvoľbu 440 Hz na overenie, že zvuk hrá.</li>
+        <li><strong>Hodinky nereagujú:</strong> over, že sú spárované, appka je na nich nainštalovaná a sú dostupné (vidno v sekcii Optimalizácia v appke).</li>
+        <li><strong>Rýchlejšie ubúda batéria:</strong> kratší interval a Boost zvyšujú spotrebu — predĺž interval.</li>
+      </ul>
+
+      <div class="card warn">
+        <h3>Dôležité upozornenie</h3>
+        <p>Vedecká účinnosť ultrazvukových a haptických odpudzovačov komárov nie je preukázaná a nezávislé štúdie ju vo všeobecnosti nepotvrdzujú. Aplikácia nie je zdravotnícka pomôcka a nie je náhradou za repelenty, moskytiéry či iné overené opatrenia, najmä v oblastiach s výskytom chorôb prenášaných komármi. Používaš na vlastnú zodpovednosť.</p>
+      </div>
+
+      <h3>Kontakt</h3>
+      <p>Otázky, návrhy alebo problém? Napíš na <a href="mailto:jansikuta@me.com">jansikuta@me.com</a> — ozvem sa čo najskôr.</p>
+    </div>
+  </div>
+
+  <!-- ENGLISH -->
+  <div data-lang="en">
+    <h2>Support</h2>
+    <div class="card">
+      <h3>What the app does</h3>
+      <p>Anti-Mosquito turns your iPhone — and optionally your Apple Watch — into an experimental mosquito repeller using high-frequency sound and haptic pulses.</p>
+
+      <h3>How to use it</h3>
+      <ul>
+        <li><strong>Effect mode:</strong> choose "iPhone only", "Watch only", or "Dual".</li>
+        <li><strong>Dual mode</strong> runs the iPhone and Watch in sync — the strongest sensation.</li>
+        <li><strong>Boost</strong> adds a frequency sweep and stronger haptics.</li>
+        <li><strong>Optimize</strong> automatically picks the best mode for your available devices.</li>
+        <li><strong>Interval, length, frequency and haptic type</strong> can be tuned manually.</li>
+        <li><strong>Language</strong> (SK/EN/system) is switched via the ⓘ button at the top right.</li>
+      </ul>
+
+      <h3>Troubleshooting</h3>
+      <ul>
+        <li><strong>Can't hear the sound:</strong> higher frequencies (e.g. 22 kHz) are at the edge of, or beyond, adult human hearing — that is intentional. Try the 440 Hz preset to confirm sound is playing.</li>
+        <li><strong>Watch doesn't respond:</strong> make sure it is paired, the app is installed on it, and it is reachable (shown in the Optimization section in the app).</li>
+        <li><strong>Battery drains faster:</strong> a shorter interval and Boost increase power use — raise the interval.</li>
+      </ul>
+
+      <div class="card warn">
+        <h3>Important disclaimer</h3>
+        <p>The scientific efficacy of ultrasonic and haptic mosquito repellers is not proven, and independent studies generally do not confirm an effect. This app is not a medical device and not a substitute for repellents, mosquito nets or other proven measures, especially in areas with mosquito-borne diseases. Use at your own risk.</p>
+      </div>
+
+      <h3>Contact</h3>
+      <p>Questions, suggestions or an issue? Email <a href="mailto:jansikuta@me.com">jansikuta@me.com</a> — I'll reply as soon as I can.</p>
+    </div>
+  </div>
+
+  <footer>
+    © 2026 Ján Sikuta · Anti-Mosquito · <a href="mailto:jansikuta@me.com">jansikuta@me.com</a>
+  </footer>
+</div>
+
+<script>
+  function setLang(l){
+    document.body.classList.remove('sk','en');
+    document.body.classList.add(l);
+    document.getElementById('b-sk').classList.toggle('active', l==='sk');
+    document.getElementById('b-en').classList.toggle('active', l==='en');
+    document.documentElement.lang = l;
+  }
+  setLang((navigator.language||'en').toLowerCase().startsWith('sk') ? 'sk' : 'en');
+</script>
+</body>
+</html>
