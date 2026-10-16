@@ -1,105 +1,95 @@
 <!DOCTYPE html>
 <html lang="sk">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mosquiter — Privacy Policy / Ochrana súkromia</title>
-<style>
-  :root{--bg:#0a140f;--card:#0e1d16;--stroke:#1b2c23;--accent:#a8e6cf;--accent2:#5cdc94;
-        --text:#cfe5dc;--dim:#6f8a7e;--faint:#4a6258;}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-       background:linear-gradient(180deg,#0d1c15,#060d09);color:var(--text);line-height:1.65;}
-  .wrap{max-width:760px;margin:0 auto;padding:28px 20px 64px;}
-  header{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:8px;}
-  .logo{font-size:30px}
-  h1{font-size:22px;margin:0;color:var(--accent)}
-  nav{margin-left:auto;display:flex;gap:14px;align-items:center;font-size:14px}
-  nav a{color:var(--dim);text-decoration:none}
-  nav a:hover{color:var(--accent)}
-  .lang{display:inline-flex;border:1px solid var(--stroke);border-radius:999px;overflow:hidden}
-  .lang button{background:transparent;border:0;color:var(--dim);padding:5px 12px;cursor:pointer;font-size:13px}
-  .lang button.active{background:var(--accent2);color:#06140d;font-weight:700}
-  h2{color:var(--accent);font-size:17px;margin:26px 0 8px}
-  .card{background:var(--card);border:1px solid var(--stroke);border-radius:16px;padding:18px 20px;margin-top:14px}
-  a{color:var(--accent2)}
-  ul{padding-left:20px}
-  li{margin:6px 0}
-  .muted{color:var(--dim);font-size:13px}
-  footer{margin-top:34px;border-top:1px solid var(--stroke);padding-top:16px;color:var(--dim);font-size:13px}
-  [data-lang]{display:none}
-  body.sk [data-lang="sk"]{display:block}
-  body.en [data-lang="en"]{display:block}
-  span[data-lang]{display:none}
-  body.sk span[data-lang="sk"]{display:inline}
-  body.en span[data-lang="en"]{display:inline}
-</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mosquiter · Ochrana súkromia / Privacy Policy</title>
+<link rel="stylesheet" href="style.css">
 </head>
-<body class="sk">
-<div class="wrap">
-  <header>
-    <span class="logo">🦟</span>
-    <h1>Mosquiter</h1>
-    <nav>
-      <a href="index.html"><span data-lang="sk">Domov</span><span data-lang="en">Home</span></a>
-      <a href="support.html">Support</a>
-      <span class="lang">
-        <button id="b-sk" onclick="setLang('sk')">SK</button>
-        <button id="b-en" onclick="setLang('en')">EN</button>
-      </span>
-    </nav>
-  </header>
+<body>
+<main>
+  <a class="back" href="index.html">← Mosquiter</a>
+  <nav class="langs"><a href="#sk" lang="sk">Slovenčina</a> · <a href="#en" lang="en">English</a></nav>
 
-  <!-- SLOVENSKY -->
-  <div data-lang="sk">
-    <h2>Ochrana súkromia</h2>
-    <p class="muted">Naposledy aktualizované: 29. 6. 2026</p>
-    <div class="card">
-      <p>Aplikácia <strong>Mosquiter</strong> <strong>nezbiera, neukladá ani nezdieľa žiadne osobné údaje</strong>. Nepoužíva účty, prihlasovanie, analytiku, reklamu ani žiadne sledovanie (tracking).</p>
-      <ul>
-        <li>Jediná uložená informácia je tvoja <strong>jazyková predvoľba</strong>, ktorá sa ukladá <strong>lokálne v zariadení</strong> (UserDefaults) a nikdy sa neodosiela.</li>
-        <li>Žiadne dáta neopúšťajú tvoje zariadenie. Neexistuje žiadny server, do ktorého by aplikácia posielala informácie.</li>
-        <li>Aplikácia využíva <strong>reproduktor iPhonu</strong> (generovanie tónov), <strong>Taptic Engine</strong> na Apple Watch (haptika) a <strong>lokálne spojenie</strong> medzi spárovaným iPhonom a Apple Watch (WatchConnectivity) výlučne na fungovanie svojich funkcií.</li>
-        <li>Aplikácia <strong>nevyužíva</strong> tretie strany, reklamné SDK ani analytické nástroje.</li>
-        <li>Aplikácia je vhodná pre všetky vekové kategórie a nezbiera údaje o deťoch.</li>
-      </ul>
-      <p>Ak sa tieto pravidlá v budúcnosti zmenia, aktualizovanú verziu zverejníme na tejto stránke.</p>
-      <p class="muted">Kontakt: <a href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
-    </div>
-  </div>
+  <section id="sk" lang="sk">
+    <h1>Zásady ochrany súkromia</h1>
+    <p class="updated">Posledná aktualizácia: 16. 10. 2026 · Platí pre Mosquiter pre iPhone a Apple Watch, verzia 2.0 a novšie</p>
 
-  <!-- ENGLISH -->
-  <div data-lang="en">
-    <h2>Privacy Policy</h2>
-    <p class="muted">Last updated: June 29, 2026</p>
-    <div class="card">
-      <p><strong>Mosquiter</strong> <strong>does not collect, store, or share any personal data</strong>. It does not use accounts, sign-in, analytics, advertising, or tracking of any kind.</p>
-      <ul>
-        <li>The only information stored is your <strong>language preference</strong>, saved <strong>locally on your device</strong> (UserDefaults) and never transmitted.</li>
-        <li>No data leaves your device. There is no server that the app sends information to.</li>
-        <li>The app uses the <strong>iPhone speaker</strong> (to generate tones), the <strong>Apple Watch Taptic Engine</strong> (haptics), and the <strong>local connection</strong> between your paired iPhone and Apple Watch (WatchConnectivity) solely to operate its features.</li>
-        <li>The app uses <strong>no</strong> third parties, advertising SDKs, or analytics tools.</li>
-        <li>The app is suitable for all ages and does not collect data from children.</li>
-      </ul>
-      <p>If this policy changes in the future, the updated version will be published on this page.</p>
-      <p class="muted">Contact: <a href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
-    </div>
-  </div>
+    <h2>1. Zhrnutie</h2>
+    <p>Mosquiter nezbiera, neukladá na serveri, neodosiela ani nezdieľa žiadne osobné údaje. Aplikácia nemá používateľské účty, analytiku, reklamu ani nástroje na sledovanie a nekomunikuje so žiadnym serverom.</p>
 
-  <footer>
-    © 2026 Ján Sikuta · Mosquiter · <a href="mailto:jansikuta@me.com">jansikuta@me.com</a>
-  </footer>
-</div>
+    <h2>2. Údaje uložené vo vašom zariadení</h2>
+    <p>Aplikácia si v zariadení ukladá len:</p>
+    <ul>
+      <li>vaše nastavenia (režim, interval, dĺžka relácie, typ vibrácií, zvuk a frekvencia),</li>
+      <li>stav aktuálnej relácie (či beží a kedy skončí),</li>
+      <li>zvolený jazyk rozhrania.</li>
+    </ul>
+    <p>Tieto údaje zostávajú vo vašom iPhone a Apple Watch. Odstránia sa spolu s aplikáciou.</p>
 
-<script>
-  function setLang(l){
-    document.body.classList.remove('sk','en');
-    document.body.classList.add(l);
-    document.getElementById('b-sk').classList.toggle('active', l==='sk');
-    document.getElementById('b-en').classList.toggle('active', l==='en');
-    document.documentElement.lang = l;
-  }
-  setLang((navigator.language||'en').toLowerCase().startsWith('sk') ? 'sk' : 'en');
-</script>
+    <h2>3. Komunikácia medzi iPhonom a hodinkami</h2>
+    <p>Nastavenia a pokyny na štart a stop sa prenášajú medzi vaším iPhonom a spárovanými Apple Watch priamo cez systémovú službu Apple (WatchConnectivity). Neprechádzajú cez žiadny náš server a neobsahujú žiadne osobné údaje.</p>
+
+    <h2>4. Zdravie (HealthKit)</h2>
+    <p>Na Apple Watch aplikácia žiada povolenie spustiť reláciu cvičenia (workout). Používa ju výhradne na to, aby hodinky mohli vibrovať aj pri zhasnutom displeji. Aplikácia <strong>nečíta žiadne zdravotné údaje</strong> a do aplikácie Zdravie neukladá žiadne cvičenia ani iné údaje.</p>
+
+    <h2>5. Zvuk</h2>
+    <p>Aplikácia zvuk len prehráva. Mikrofón nepoužíva a nič nenahráva.</p>
+
+    <h2>6. Tretie strany</h2>
+    <p>Aplikácia neobsahuje žiadne knižnice ani služby tretích strán a s nikým nezdieľa žiadne údaje.</p>
+
+    <h2>7. Deti</h2>
+    <p>Aplikácia nezbiera údaje od nikoho, teda ani od detí.</p>
+
+    <h2>8. Zmeny týchto zásad</h2>
+    <p>Ak sa zásady zmenia, aktualizovaná verzia bude zverejnená na tejto stránke s novým dátumom.</p>
+
+    <h2>9. Kontakt</h2>
+    <p>Ján Sikuta · <a href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
+  </section>
+
+  <hr>
+
+  <section id="en" lang="en">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 16 October 2026 · Applies to Mosquiter for iPhone and Apple Watch, version 2.0 and later</p>
+
+    <h2>1. Summary</h2>
+    <p>Mosquiter does not collect, store on a server, transmit or share any personal data. The app has no user accounts, no analytics, no advertising and no tracking tools, and it does not communicate with any server.</p>
+
+    <h2>2. Data stored on your device</h2>
+    <p>The app stores only the following on your device:</p>
+    <ul>
+      <li>your settings (mode, interval, session length, haptic type, sound and frequency),</li>
+      <li>the state of the current session (whether it is running and when it ends),</li>
+      <li>your chosen interface language.</li>
+    </ul>
+    <p>This data stays on your iPhone and Apple Watch and is removed together with the app.</p>
+
+    <h2>3. Communication between iPhone and Watch</h2>
+    <p>Settings and start/stop commands are exchanged between your iPhone and your paired Apple Watch directly through Apple's system service (WatchConnectivity). They never pass through any server of ours and contain no personal data.</p>
+
+    <h2>4. Health (HealthKit)</h2>
+    <p>On Apple Watch the app asks for permission to start a workout session. It uses it solely so the Watch can keep vibrating with the screen off. The app <strong>does not read any health data</strong> and does not save any workouts or other data to the Health app.</p>
+
+    <h2>5. Sound</h2>
+    <p>The app only plays sound. It does not use the microphone and records nothing.</p>
+
+    <h2>6. Third parties</h2>
+    <p>The app contains no third-party libraries or services and shares no data with anyone.</p>
+
+    <h2>7. Children</h2>
+    <p>The app collects no data from anyone, including children.</p>
+
+    <h2>8. Changes to this policy</h2>
+    <p>If this policy changes, the updated version will be published on this page with a new date.</p>
+
+    <h2>9. Contact</h2>
+    <p>Ján Sikuta · <a href="mailto:jansikuta@me.com">jansikuta@me.com</a></p>
+  </section>
+
+  <footer>© 2026 Ján Sikuta · Mosquiter</footer>
+</main>
 </body>
 </html>
